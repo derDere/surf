@@ -8,6 +8,8 @@ static char *scriptfiles[]  = {
 	"~/.surf/scripts/default.js",
 };
 
+#define HOMEPAGE "file:///home/deremer/.surf/homepage/index.html"
+
 /* Webkit default features */
 static Parameter defconfig[ParameterLast] = {
 	SETB(AcceleratedCanvas,  1),
@@ -166,5 +168,3 @@ static Button buttons[] = {
 	{ OnAny,        0,              9,      clicknavigate,  { .i = +1 },    1 },
 	{ OnMedia,      MODKEY,         1,      clickexternplayer, { 0 },       1 },
 };
-
-#define HOMEPAGE "https://duckduckgo.com/"
